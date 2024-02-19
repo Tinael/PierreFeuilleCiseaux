@@ -4,6 +4,17 @@ Ce projet implémente le célèbre jeu Pierre/Feuille/Ciseaux en Python. Il prop
 
 ## Contenu du Projet
 
+Pierre-Feuille-Ciseaux/
+├── Game
+│   ├── RPS_Tools
+│   │   ├── __init__.py
+│   │   ├── RPS_SimpleGame.py
+│   │   └── RPS_SimpleGame.py
+│   └── RPS_Game.py
+├── RPS_MultipleGame.log
+├── RPS_SimpleGame.log
+└── README.md
+
 Le projet est organisé en plusieurs fichiers :
 
 - `RPS_SimpleGame.py` : Contient la classe `RPS_SimpleGame` pour la version simple du jeu.
