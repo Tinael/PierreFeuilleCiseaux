@@ -15,9 +15,12 @@ test_SimplegameOneplayer():
     Teste la méthode SimplegameOneplayer de la classe RPS_SimpleGame.
     Vérifie les résultats attendus pour différents scénarios de jeu entre un joueur et l'ordinateur.
 
+test_RPS_MultipleGame():
+    Teste les fonctionnalités de la classe RPS_MultipleGame.
+    Vérifie la gestion de l'historique et les résultats du jeu.
 """
 import unittest
-from RPS_Tools import RPS_SimpleGame
+from RPS_Tools import RPS_SimpleGame, RPS_MultipleGame
 
 class TestRPS(unittest.TestCase):
     """
@@ -42,6 +45,19 @@ class TestRPS(unittest.TestCase):
         # Vérification des résultats attendus pour différents scénarios de jeu
         self.assertIn(game.SimplegameOneplayer('R'), [0, 1, 2])  # Résultat possible de SimplegameOneplayer avec R
         self.assertEqual(game.SimplegameOneplayer('test'),3)  # Erreur entrée invalide
+
+    def test_RPS_MultipleGame(self):
+        """Méthode de test pour la classe RPS_MultipleGame"""
+
+        multiple_game = RPS_MultipleGame.RPS_MultipleGame()
+
+        # Test de la méthode play
+        self.assertIn(multiple_game.play('R'), [0, 1, 2])  # Résultat possible de la partie avec choix 'R'
+        self.assertEqual(multiple_game.play('test'),3)  # Erreur entrée invalide
+
+        # Test de l'historique
+        history = multiple_game.get_history()
+        self.assertIsInstance(history, list)  # Vérifie que l'historique est une liste
 
 if __name__ == '__main__':
     unittest.main()

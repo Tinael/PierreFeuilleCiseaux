@@ -69,7 +69,7 @@ class RPS_SimpleGame:
             int: 0 en cas d'égalité, 1 si le joueur 1 gagne, 2 si le joueur 2 gagne
         """
         self.logger.info("Début de la partie entre deux joueurs.")
-        
+
         # Vérification des entrées
         if player1choice not in ['R', 'P', 'S'] or player2choice not in ['R', 'P', 'S']:
             self.logger.error("Erreur : Choix invalide des joueurs.")
