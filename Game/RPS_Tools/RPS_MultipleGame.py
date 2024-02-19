@@ -16,7 +16,8 @@ import random
 import logging
 from RPS_Tools import RPS_SimpleGame
 
-logging.basicConfig(filename='RPS_MultipleGame.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configuration du logging
+logging.basicConfig(level=logging.INFO)
 
 class RPS_MultipleGame:
     """
