@@ -3,17 +3,18 @@
 Ce projet implémente le célèbre jeu Pierre/Feuille/Ciseaux en Python. Il propose deux versions du jeu : une version simple où un joueur peut jouer contre un autre joueur ou contre l'ordinateur, et une version multiple qui permet de jouer plusieurs parties en conservant un historique des parties précédentes.
 
 ## Contenu du Projet
-
-Pierre-Feuille-Ciseaux/
-├── Game
-│   ├── RPS_Tools
-│   │   ├── __init__.py
-│   │   ├── RPS_SimpleGame.py
-│   │   └── RPS_SimpleGame.py
-│   └── RPS_Game.py
-├── RPS_MultipleGame.log
-├── RPS_SimpleGame.log
-└── README.md
+Voici l'arborescence simplifiée du projet :
+    
+    Pierre-Feuille-Ciseaux/
+    ├── Game
+    │   ├── RPS_Tools
+    │   │   ├── __init__.py
+    │   │   ├── RPS_SimpleGame.py
+    │   │   └── RPS_SimpleGame.py
+    │   └── RPS_Game.py
+    ├── RPS_MultipleGame.log
+    ├── RPS_SimpleGame.log
+    └── README.md
 
 Le projet est organisé en plusieurs fichiers :
 
